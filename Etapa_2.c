@@ -18,8 +18,24 @@ int main(void){
 
 }
 */
-
+/*
 int main(void){
 
+    const float pi = 3.14;
+    float r = 0;
+    printf("Digite o raio: ");
+    scanf("%f", &r);
+    r = pi * (r * r);
+    printf("%.2f", r);
+    return 0;
+}
+    */
+int main(void){
+    
+    int idd = 0;
+    printf("Digite sua idade: ");
+    scanf("%d", &idd);
+    idd = idd * 365;
+    printf("Voce tem %d dias", idd);
     return 0;
 }
