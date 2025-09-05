@@ -25,3 +25,27 @@ int main(void) {
 }
 */
 
+int main(void) {
+    // Matriz 8x8 representando o tabuleiro
+    char tabuleiro[8][8] = {
+        {'T','C','B','D','R','B','C','T'}, // linha 8 - pretas
+        {'P','P','P','P','P','P','P','P'}, // linha 7 - peões pretos
+        {'.','.','.','.','.','.','.','.'}, // linha 6
+        {'.','.','.','.','.','.','.','.'}, // linha 5
+        {'.','.','.','.','.','.','.','.'}, // linha 4
+        {'.','.','.','.','.','.','.','.'}, // linha 3
+        {'P','P','P','P','P','P','P','P'}, // linha 2 - peões brancos
+        {'T','C','B','D','R','B','C','T'}  // linha 1 - brancas
+    };
+    int i;
+    int j;
+    // Imprimir o tabuleiro
+    for (i = 0; i < 8; i++) {
+        for (j = 0; j < 8; j++) {
+            printf("%c ", tabuleiro[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
